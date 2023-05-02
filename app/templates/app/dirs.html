@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Список директорий</title>
+</head>
+<body>
+    <h1>Список директорий</h1>
+    {% for dir in dirs %}
+        > {{ dir }}<br>
+    {% endfor %}
+    <a href="{% url 'home' %}">Go Back </a><h1>🙂</h1>
+    <a href="{% url 'time' %}">Go Time</a><br>
+</body>
+</html>
